@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		192AF61A190DD31E84CBD877 /* Pods_Meli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2170A268985B959FF515196 /* Pods_Meli.framework */; };
+		6E87E192FB9B478575CE4DCC /* Pods_Meli_MeliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD49CF0E52797B9CC2C0445 /* Pods_Meli_MeliUITests.framework */; };
+		78D22B905708780895D6F128 /* Pods_MeliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD9E3F22E3E8A5DB9467ADA /* Pods_MeliTests.framework */; };
+		7930554425FEB13E00104820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930554325FEB13E00104820 /* AppDelegate.swift */; };
+		7930554625FEB13E00104820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930554525FEB13E00104820 /* SceneDelegate.swift */; };
+		7930554B25FEB13E00104820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7930554925FEB13E00104820 /* Main.storyboard */; };
+		7930554E25FEB13E00104820 /* Meli.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7930554C25FEB13E00104820 /* Meli.xcdatamodeld */; };
+		7930555025FEB14400104820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7930554F25FEB14400104820 /* Assets.xcassets */; };
+		7930555325FEB14400104820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7930555125FEB14400104820 /* LaunchScreen.storyboard */; };
+		7930555E25FEB14500104820 /* MeliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930555D25FEB14500104820 /* MeliTests.swift */; };
+		7930556925FEB14500104820 /* MeliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930556825FEB14500104820 /* MeliUITests.swift */; };
+		7930558125FEB2CA00104820 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930558025FEB2CA00104820 /* Product.swift */; };
+		7930558925FEB56200104820 /* MeliDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930558825FEB56200104820 /* MeliDao.swift */; };
+		7930558E25FEB57300104820 /* MeliService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930558D25FEB57300104820 /* MeliService.swift */; };
+		79360981260BE1D3004C3B8D /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79360980260BE1D3004C3B8D /* OfflineViewController.swift */; };
+		79360986260BE288004C3B8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79360985260BE288004C3B8D /* NetworkManager.swift */; };
+		7963E8A92609820C00BF693D /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963E8A82609820C00BF693D /* SpinnerViewController.swift */; };
+		79697BFE2602C29A008516FB /* ProductDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79697BFD2602C29A008516FB /* ProductDetailTableViewController.swift */; };
+		79697C032602C2B2008516FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79697C022602C2B2008516FB /* SearchViewController.swift */; };
+		79697C0D2602C2F1008516FB /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79697C0C2602C2F1008516FB /* ProductTableViewCell.swift */; };
+		796DE3DE260B7A6D00F6DC80 /* SearchedProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DE3DD260B7A6D00F6DC80 /* SearchedProductsViewController.swift */; };
+		796DE3E6260B7A8A00F6DC80 /* SearchedProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DE3E5260B7A8A00F6DC80 /* SearchedProductsCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7930555A25FEB14500104820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7930553825FEB13E00104820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7930553F25FEB13E00104820;
+			remoteInfo = Meli;
+		};
+		7930556525FEB14500104820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7930553825FEB13E00104820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7930553F25FEB13E00104820;
+			remoteInfo = Meli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054A38C88EAFAEEAB55B06E5 /* Pods-MeliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliTests.release.xcconfig"; path = "Target Support Files/Pods-MeliTests/Pods-MeliTests.release.xcconfig"; sourceTree = "<group>"; };
+		084A833C6A7A0C2FE1449085 /* Pods-MeliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliTests.debug.xcconfig"; path = "Target Support Files/Pods-MeliTests/Pods-MeliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7930554025FEB13E00104820 /* Meli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7930554325FEB13E00104820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7930554525FEB13E00104820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7930554A25FEB13E00104820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7930554D25FEB13E00104820 /* Meli.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meli.xcdatamodel; sourceTree = "<group>"; };
+		7930554F25FEB14400104820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7930555225FEB14400104820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7930555425FEB14400104820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7930555925FEB14500104820 /* MeliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7930555D25FEB14500104820 /* MeliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliTests.swift; sourceTree = "<group>"; };
+		7930555F25FEB14500104820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7930556425FEB14500104820 /* MeliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7930556825FEB14500104820 /* MeliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliUITests.swift; sourceTree = "<group>"; };
+		7930556A25FEB14500104820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7930558025FEB2CA00104820 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		7930558825FEB56200104820 /* MeliDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliDao.swift; sourceTree = "<group>"; };
+		7930558D25FEB57300104820 /* MeliService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliService.swift; sourceTree = "<group>"; };
+		79360980260BE1D3004C3B8D /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		79360985260BE288004C3B8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7963E8A82609820C00BF693D /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		79697BFD2602C29A008516FB /* ProductDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewController.swift; sourceTree = "<group>"; };
+		79697C022602C2B2008516FB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		79697C0C2602C2F1008516FB /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		796DE3DD260B7A6D00F6DC80 /* SearchedProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedProductsViewController.swift; sourceTree = "<group>"; };
+		796DE3E5260B7A8A00F6DC80 /* SearchedProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F9321A04B673FE137CB7709 /* Pods-Meli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli.release.xcconfig"; path = "Target Support Files/Pods-Meli/Pods-Meli.release.xcconfig"; sourceTree = "<group>"; };
+		8DD9E3F22E3E8A5DB9467ADA /* Pods_MeliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D86692FEA390773E2FB2E1 /* Pods-Meli-MeliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli-MeliUITests.release.xcconfig"; path = "Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6D7C90324B8EFDD95B2B951 /* Pods-Meli-MeliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli-MeliUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD49CF0E52797B9CC2C0445 /* Pods_Meli_MeliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli_MeliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2170A268985B959FF515196 /* Pods_Meli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4690E26A22DA79FD76B0880 /* Pods-Meli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli.debug.xcconfig"; path = "Target Support Files/Pods-Meli/Pods-Meli.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7930553D25FEB13E00104820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192AF61A190DD31E84CBD877 /* Pods_Meli.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930555625FEB14500104820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D22B905708780895D6F128 /* Pods_MeliTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930556125FEB14500104820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E87E192FB9B478575CE4DCC /* Pods_Meli_MeliUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CAF127D1393DD142A246AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2170A268985B959FF515196 /* Pods_Meli.framework */,
+				BCD49CF0E52797B9CC2C0445 /* Pods_Meli_MeliUITests.framework */,
+				8DD9E3F22E3E8A5DB9467ADA /* Pods_MeliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D451AD2B08A5B27E461A6D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4690E26A22DA79FD76B0880 /* Pods-Meli.debug.xcconfig */,
+				7F9321A04B673FE137CB7709 /* Pods-Meli.release.xcconfig */,
+				B6D7C90324B8EFDD95B2B951 /* Pods-Meli-MeliUITests.debug.xcconfig */,
+				B3D86692FEA390773E2FB2E1 /* Pods-Meli-MeliUITests.release.xcconfig */,
+				084A833C6A7A0C2FE1449085 /* Pods-MeliTests.debug.xcconfig */,
+				054A38C88EAFAEEAB55B06E5 /* Pods-MeliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7930553725FEB13E00104820 = {
+			isa = PBXGroup;
+			children = (
+				7930554225FEB13E00104820 /* Meli */,
+				7930555C25FEB14500104820 /* MeliTests */,
+				7930556725FEB14500104820 /* MeliUITests */,
+				7930554125FEB13E00104820 /* Products */,
+				5D451AD2B08A5B27E461A6D1 /* Pods */,
+				4CAF127D1393DD142A246AE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7930554125FEB13E00104820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7930554025FEB13E00104820 /* Meli.app */,
+				7930555925FEB14500104820 /* MeliTests.xctest */,
+				7930556425FEB14500104820 /* MeliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7930554225FEB13E00104820 /* Meli */ = {
+			isa = PBXGroup;
+			children = (
+				7930557925FEB17B00104820 /* Main */,
+				7930557A25FEB1A100104820 /* Resources */,
+				7930557B25FEB1CE00104820 /* Model */,
+				7930557C25FEB22F00104820 /* DAO */,
+				7930557D25FEB24800104820 /* Service */,
+				7930557E25FEB26000104820 /* View */,
+				7930557F25FEB26B00104820 /* ViewControllers */,
+			);
+			path = Meli;
+			sourceTree = "<group>";
+		};
+		7930555C25FEB14500104820 /* MeliTests */ = {
+			isa = PBXGroup;
+			children = (
+				7930555D25FEB14500104820 /* MeliTests.swift */,
+				7930555F25FEB14500104820 /* Info.plist */,
+			);
+			path = MeliTests;
+			sourceTree = "<group>";
+		};
+		7930556725FEB14500104820 /* MeliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7930556825FEB14500104820 /* MeliUITests.swift */,
+				7930556A25FEB14500104820 /* Info.plist */,
+			);
+			path = MeliUITests;
+			sourceTree = "<group>";
+		};
+		7930557925FEB17B00104820 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7930554325FEB13E00104820 /* AppDelegate.swift */,
+				7930554525FEB13E00104820 /* SceneDelegate.swift */,
+				7930555425FEB14400104820 /* Info.plist */,
+				7930554C25FEB13E00104820 /* Meli.xcdatamodeld */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7930557A25FEB1A100104820 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7930554925FEB13E00104820 /* Main.storyboard */,
+				7930555125FEB14400104820 /* LaunchScreen.storyboard */,
+				7930554F25FEB14400104820 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7930557B25FEB1CE00104820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7930558025FEB2CA00104820 /* Product.swift */,
+				79360985260BE288004C3B8D /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7930557C25FEB22F00104820 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				7930558825FEB56200104820 /* MeliDao.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		7930557D25FEB24800104820 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7930558D25FEB57300104820 /* MeliService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7930557E25FEB26000104820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79697C0C2602C2F1008516FB /* ProductTableViewCell.swift */,
+				7963E8A82609820C00BF693D /* SpinnerViewController.swift */,
+				796DE3E5260B7A8A00F6DC80 /* SearchedProductsCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7930557F25FEB26B00104820 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79697BFD2602C29A008516FB /* ProductDetailTableViewController.swift */,
+				79697C022602C2B2008516FB /* SearchViewController.swift */,
+				796DE3DD260B7A6D00F6DC80 /* SearchedProductsViewController.swift */,
+				79360980260BE1D3004C3B8D /* OfflineViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7930553F25FEB13E00104820 /* Meli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7930556D25FEB14500104820 /* Build configuration list for PBXNativeTarget "Meli" */;
+			buildPhases = (
+				9F3F6DF97CA3262241129818 /* [CP] Check Pods Manifest.lock */,
+				7930553C25FEB13E00104820 /* Sources */,
+				7930553D25FEB13E00104820 /* Frameworks */,
+				7930553E25FEB13E00104820 /* Resources */,
+				8C89BAE33D2118585751EEAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meli;
+			productName = Meli;
+			productReference = 7930554025FEB13E00104820 /* Meli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7930555825FEB14500104820 /* MeliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7930557025FEB14500104820 /* Build configuration list for PBXNativeTarget "MeliTests" */;
+			buildPhases = (
+				AC59E798A3F478315C8EB5B4 /* [CP] Check Pods Manifest.lock */,
+				7930555525FEB14500104820 /* Sources */,
+				7930555625FEB14500104820 /* Frameworks */,
+				7930555725FEB14500104820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7930555B25FEB14500104820 /* PBXTargetDependency */,
+			);
+			name = MeliTests;
+			productName = MeliTests;
+			productReference = 7930555925FEB14500104820 /* MeliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7930556325FEB14500104820 /* MeliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7930557325FEB14500104820 /* Build configuration list for PBXNativeTarget "MeliUITests" */;
+			buildPhases = (
+				202A9F506FCF1D08545D5AA9 /* [CP] Check Pods Manifest.lock */,
+				7930556025FEB14500104820 /* Sources */,
+				7930556125FEB14500104820 /* Frameworks */,
+				7930556225FEB14500104820 /* Resources */,
+				1F2CFB5F9352E82F0341CB03 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7930556625FEB14500104820 /* PBXTargetDependency */,
+			);
+			name = MeliUITests;
+			productName = MeliUITests;
+			productReference = 7930556425FEB14500104820 /* MeliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7930553825FEB13E00104820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7930553F25FEB13E00104820 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7930555825FEB14500104820 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7930553F25FEB13E00104820;
+					};
+					7930556325FEB14500104820 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7930553F25FEB13E00104820;
+					};
+				};
+			};
+			buildConfigurationList = 7930553B25FEB13E00104820 /* Build configuration list for PBXProject "Meli" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7930553725FEB13E00104820;
+			productRefGroup = 7930554125FEB13E00104820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7930553F25FEB13E00104820 /* Meli */,
+				7930555825FEB14500104820 /* MeliTests */,
+				7930556325FEB14500104820 /* MeliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7930553E25FEB13E00104820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7930555325FEB14400104820 /* LaunchScreen.storyboard in Resources */,
+				7930555025FEB14400104820 /* Assets.xcassets in Resources */,
+				7930554B25FEB13E00104820 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930555725FEB14500104820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930556225FEB14500104820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2CFB5F9352E82F0341CB03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		202A9F506FCF1D08545D5AA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meli-MeliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C89BAE33D2118585751EEAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli/Pods-Meli-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meli/Pods-Meli-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meli/Pods-Meli-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3F6DF97CA3262241129818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meli-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC59E798A3F478315C8EB5B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7930553C25FEB13E00104820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7930554E25FEB13E00104820 /* Meli.xcdatamodeld in Sources */,
+				7930558E25FEB57300104820 /* MeliService.swift in Sources */,
+				796DE3E6260B7A8A00F6DC80 /* SearchedProductsCollectionViewCell.swift in Sources */,
+				7963E8A92609820C00BF693D /* SpinnerViewController.swift in Sources */,
+				79697C032602C2B2008516FB /* SearchViewController.swift in Sources */,
+				796DE3DE260B7A6D00F6DC80 /* SearchedProductsViewController.swift in Sources */,
+				7930558125FEB2CA00104820 /* Product.swift in Sources */,
+				79360981260BE1D3004C3B8D /* OfflineViewController.swift in Sources */,
+				79697BFE2602C29A008516FB /* ProductDetailTableViewController.swift in Sources */,
+				79697C0D2602C2F1008516FB /* ProductTableViewCell.swift in Sources */,
+				7930558925FEB56200104820 /* MeliDao.swift in Sources */,
+				79360986260BE288004C3B8D /* NetworkManager.swift in Sources */,
+				7930554425FEB13E00104820 /* AppDelegate.swift in Sources */,
+				7930554625FEB13E00104820 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930555525FEB14500104820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7930555E25FEB14500104820 /* MeliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7930556025FEB14500104820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7930556925FEB14500104820 /* MeliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7930555B25FEB14500104820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7930553F25FEB13E00104820 /* Meli */;
+			targetProxy = 7930555A25FEB14500104820 /* PBXContainerItemProxy */;
+		};
+		7930556625FEB14500104820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7930553F25FEB13E00104820 /* Meli */;
+			targetProxy = 7930556525FEB14500104820 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7930554925FEB13E00104820 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7930554A25FEB13E00104820 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7930555125FEB14400104820 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7930555225FEB14400104820 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7930556B25FEB14500104820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7930556C25FEB14500104820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7930556E25FEB14500104820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4690E26A22DA79FD76B0880 /* Pods-Meli.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = "$(SRCROOT)/Meli/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.Meli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7930556F25FEB14500104820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9321A04B673FE137CB7709 /* Pods-Meli.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = "$(SRCROOT)/Meli/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.Meli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7930557125FEB14500104820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084A833C6A7A0C2FE1449085 /* Pods-MeliTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = MeliTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.MeliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meli.app/Meli";
+			};
+			name = Debug;
+		};
+		7930557225FEB14500104820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054A38C88EAFAEEAB55B06E5 /* Pods-MeliTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = MeliTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.MeliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meli.app/Meli";
+			};
+			name = Release;
+		};
+		7930557425FEB14500104820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D7C90324B8EFDD95B2B951 /* Pods-Meli-MeliUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = MeliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.MeliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meli;
+			};
+			name = Debug;
+		};
+		7930557525FEB14500104820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D86692FEA390773E2FB2E1 /* Pods-Meli-MeliUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4HCP92R5Q6;
+				INFOPLIST_FILE = MeliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanesamizrahi.ios.MeliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meli;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7930553B25FEB13E00104820 /* Build configuration list for PBXProject "Meli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7930556B25FEB14500104820 /* Debug */,
+				7930556C25FEB14500104820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7930556D25FEB14500104820 /* Build configuration list for PBXNativeTarget "Meli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7930556E25FEB14500104820 /* Debug */,
+				7930556F25FEB14500104820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7930557025FEB14500104820 /* Build configuration list for PBXNativeTarget "MeliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7930557125FEB14500104820 /* Debug */,
+				7930557225FEB14500104820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7930557325FEB14500104820 /* Build configuration list for PBXNativeTarget "MeliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7930557425FEB14500104820 /* Debug */,
+				7930557525FEB14500104820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7930554C25FEB13E00104820 /* Meli.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7930554D25FEB13E00104820 /* Meli.xcdatamodel */,
+			);
+			currentVersion = 7930554D25FEB13E00104820 /* Meli.xcdatamodel */;
+			path = Meli.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7930553825FEB13E00104820 /* Project object */;
+}

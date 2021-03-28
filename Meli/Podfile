@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Meli' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Meli
+  pod 'Kingfisher'
+  pod 'Alamofire', '~> 4.7'
+  pod 'NVActivityIndicatorView'
+  pod 'ReachabilitySwift'
+
+  target 'MeliTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MeliUITests' do
+    # Pods for testing
+  end
+
+end

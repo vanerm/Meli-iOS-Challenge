@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
