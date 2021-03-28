@@ -34,6 +34,7 @@ class ProductTableViewCell: UITableViewCell {
         } else {
             productImageView.image = nil
             productImageView.backgroundColor = .yellow
+            productImageView.image = UIImage(named: "logoMeli")
         }
         
         

@@ -18,13 +18,6 @@ class SearchedProductsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productContenView: UIView!
 
     
-    override func awakeFromNib() {
-      super.awakeFromNib()
-      productContenView.layer.cornerRadius = 6
-      productContenView.layer.masksToBounds = true
-    }
-    
-    
     func setupWith(_ product: Product){
         
         if let theTitle = product.title{
@@ -46,18 +39,26 @@ class SearchedProductsCollectionViewCell: UICollectionViewCell {
         } else {
             productImageView.image = nil
             productImageView.backgroundColor = .yellow
+            productImageView.image = UIImage(named: "logoMeli")
         }
     
 
-        // Sombra de la celda
-//        self.layer.shadowColor = UIColor.gray.cgColor
-//        self.layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
-//        self.layer.shadowRadius = 6
-//        self.layer.shadowOpacity = 0.2
-//        self.layer.masksToBounds = false
-//        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.layer.cornerRadius).cgPath
-//        self.layer.shouldRasterize = true
-//        self.layer.rasterizationScale = UIScreen.main.scale
+        // Shadow
+        productContenView.layer.shadowColor = UIColor.gray.cgColor
+        productContenView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        productContenView.layer.shadowRadius = 6
+        productContenView.layer.cornerRadius = 6
+        self.layer.cornerRadius = 6
+        productContenView.layer.shadowOpacity = 0.05
+        productContenView.layer.masksToBounds = false
+        productContenView.layer.shadowPath = UIBezierPath(roundedRect: productContenView.bounds, cornerRadius: productContenView.layer.cornerRadius).cgPath
+        productContenView.layer.shouldRasterize = true
+        productContenView.layer.rasterizationScale = UIScreen.main.scale
+        
+        productContenView.layer.shadowPath = UIBezierPath(rect: productContenView.bounds).cgPath
+        productContenView.layer.shouldRasterize = true
+        productContenView.layer.rasterizationScale = UIScreen.main.scale
+        
         
     }
     
