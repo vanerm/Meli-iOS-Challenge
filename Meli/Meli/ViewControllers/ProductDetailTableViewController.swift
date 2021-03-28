@@ -72,6 +72,9 @@ class ProductDetailTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     
   
 }

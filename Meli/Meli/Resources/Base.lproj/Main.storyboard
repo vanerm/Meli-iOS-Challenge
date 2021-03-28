@@ -138,7 +138,13 @@
                             <constraint firstItem="szr-Fb-5fS" firstAttribute="leading" secondItem="n4L-Mk-oj0" secondAttribute="leading" constant="10" id="vvt-2D-Xk3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rgW-RZ-Pdi"/>
+                    <navigationItem key="navigationItem" id="rgW-RZ-Pdi">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="RcB-I1-Ns3">
+                            <connections>
+                                <action selector="backButton:" destination="vMG-zM-1IM" id="Aat-Zx-3g8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="5UT-Gg-2Gn" id="2XK-0Z-n6V"/>
                         <outlet property="resultProductsCollectionView" destination="szr-Fb-5fS" id="ynA-aU-Lek"/>
@@ -223,6 +229,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="HQ0-Je-bCG">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="h0K-oe-KJu">
+                            <connections>
+                                <action selector="backButton:" destination="S0k-0e-tk1" id="9uy-UK-vqP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="2Le-oe-7mn">
                             <connections>
                                 <action selector="doShare:" destination="S0k-0e-tk1" id="fWE-iL-FRG"/>
@@ -327,6 +338,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="noInternet" width="1696" height="1446"/>
         <namedColor name="AccentColor">

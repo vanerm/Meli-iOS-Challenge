@@ -124,7 +124,11 @@ class SearchedProductsViewController: UIViewController,UICollectionViewDelegate,
         }
     }
     
-
+    @IBAction func backButton(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
 
 
