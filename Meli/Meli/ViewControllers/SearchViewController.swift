@@ -96,28 +96,22 @@ class SearchViewController: UIViewController, UISearchBarDelegate, CLLocationMan
 //                guard let country = placemark.country else { return }
                 
                 // 4
-                
                 DispatchQueue.main.async {
                     self.locationButton.setTitle("  Enviar a \(streetName) \(streetNumber), \(city)", for: .normal)
-//                    self.locationButton.backgroundColor = .green
                 }
             }
         } else {
             self.locationButton.setTitle("  Elegí dónde reicibir tus compras >", for: .normal)
-//            self.locationButton.backgroundColor = .red
         }
     }
     
     
     // Metodos del SearchBarDelegate
-    
     // Este metodo se ejecuta cuando el usuario toca el boton de cancel
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        //        searchBar.showsCancelButton = false
         searchBar.resignFirstResponder()
     }
-    
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.showsCancelButton = false
@@ -154,7 +148,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, CLLocationMan
         }
     }
     
-    
+    // Network Manager
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
@@ -172,11 +166,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate, CLLocationMan
         }
     }
     
-//    Button Setup para acceder a la configuracion del sistema cuando el acceso a la localizacion esta seteada en nunca
+//    Button Setup Posicion para acceder a la configuracion del sistema cuando el acceso a la localizacion esta seteada en nunca
     @IBAction func setupPosition(_ sender: Any) {
         
         if currentLocation == nil {
-            let alertController = UIAlertController (title: "Ubicación", message: "Para acceder a su ubicación, debe modificar la configuración?", preferredStyle: .alert)
+            let alertController = UIAlertController (title: "Ubicación", message: "Si desea permitir acceso a su ubicación, debe modificar la configuración del sistema", preferredStyle: .alert)
             
             let settingsAction = UIAlertAction(title: "Configuración", style: .default) { (_) -> Void in
                 

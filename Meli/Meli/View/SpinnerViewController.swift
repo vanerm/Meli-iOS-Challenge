@@ -10,7 +10,7 @@ import NVActivityIndicatorView
 
 class SpinnerViewController: UIViewController {
     
-//    var spinner = UIActivityIndicatorView(style: .large)
+    //    var spinner = UIActivityIndicatorView(style: .large)
     var spinner = NVActivityIndicatorView(frame: CGRect(x: 50, y: 50, width: 60, height: 60))
     
     

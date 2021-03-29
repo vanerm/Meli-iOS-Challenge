@@ -15,7 +15,6 @@ class OfflineViewController: UIViewController {
     
     
     @IBAction func reintentarButton(_ sender: Any) {
-//        navigationController?.popToRootViewController(animated: true)
         navigationController?.popViewController(animated: true)
     }
     
