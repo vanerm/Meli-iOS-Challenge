@@ -101,7 +101,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, CLLocationMan
                 }
             }
         } else {
-            self.locationButton.setTitle("  Elegí dónde reicibir tus compras >", for: .normal)
+            self.locationButton.setTitle("  Elegí dónde recibir tus compras >", for: .normal)
         }
     }
     
@@ -170,7 +170,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, CLLocationMan
     @IBAction func setupPosition(_ sender: Any) {
         
         if currentLocation == nil {
-            let alertController = UIAlertController (title: "Ubicación", message: "Si desea permitir acceso a su ubicación, debe modificar la configuración del sistema", preferredStyle: .alert)
+            let alertController = UIAlertController (title: "Ubicación", message: "Para permitir acceso a su ubicación, debe modificar la configuración del sistema", preferredStyle: .alert)
             
             let settingsAction = UIAlertAction(title: "Configuración", style: .default) { (_) -> Void in
                 
